@@ -21,12 +21,14 @@ const Post = () => {
   }, [])
 
   return postData ? (
-    <div className="container">
+    <div className="container" id="individual-post">
       <Link to="/blog" className="back-button">{`<`}</Link>
-      <img src={postData.cover_image_src} width="100%" />
-      <h1>{postData.title}</h1>
-      <p className="time-stamp">{postData.time_stamp}</p>
-      <div className="container">
+      <div className="flex-center">
+        <img id="post-cover-image" src={postData.cover_image_src} width="100%" />
+      </div>
+      <h1 className="post-full-title">{postData.title}</h1>
+      <h3 className="time-stamp">Written by {postData.author} on {postData.time_stamp}</h3>
+      <div className="container post-full-content">
         <p>{postData.content}</p>
       </div>
     </div>

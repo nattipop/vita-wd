@@ -10,4 +10,13 @@ const BlogPost = new Schema({
   cover_image_src: String
 })
 
+const Plan = new Schema({
+  plan_name: String,
+  description: String,
+  price: String,
+  features: Array,
+  icon_url: String
+})
+
 exports.BlogPost = mongoose.model("post", BlogPost);
+exports.Plan = mongoose.model("plan", Plan);

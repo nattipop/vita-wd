@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-const { BlogPost } = require("./models")
+const { BlogPost, Plan } = require("./models")
 
 // test
 app.get("/api", (req, res) => {
@@ -49,6 +49,41 @@ app.get("/api/post/:_id", (req, res) => {
 
     res.status(200).send(post)
   })
+})
+// fetch all plans
+app.get("/api/plans", (req, res) => {
+  Plan.find({}, (err, plans) => {
+    if(err){
+      res.status(500).send("there was an error with your request's format")
+      throw err;
+    }
+
+    if(!plans){
+      res.status(404).send("search came back negative")
+    }
+
+    res.status(200).send(plans)
+  })
+});
+// post a plan!
+app.post("/api/plans", (req, res) => {
+  if(req.body) {
+    const plan = new Plan({
+      plan_name: req.body.plan_name,
+      description: req.body.description,
+      price: req.body.price,
+      features: req.body.features,
+      icon_url: req.body.icon_url
+    });
+
+    plan.save((err) => {
+      if(err) {return next(err)}
+
+      res.status(200).send("added plan!")
+    })
+  } else {
+    res.status(400).send("incorrect data formatting")
+  }
 })
 // post a new blog post
 app.post("/api/new-post", (req, res) => {

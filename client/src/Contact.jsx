@@ -1,7 +1,8 @@
 const Contact = () => {
   return (
-    <div>Contact
-      <img className="backgrounds" src="https://i.natgeofe.com/n/c9107b46-78b1-4394-988d-53927646c72b/1095_3x2.jpg"/>
+    <div id="contact">
+      <h1>I would love to hear from you!</h1>
+      <h3>For more information on websites email me at natalie@vitawd.com</h3>
     </div>
   )
 }
