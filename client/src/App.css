@@ -176,20 +176,21 @@
   margin-top: 3vw;
 }
 
+#logo-display-section a {
+  color: white;
+}
+
 #logo-title {
   text-align: center;
 }
 
-.two-color-logo {
-  font-size: 30px;
-}
-
 .two-color-logo h3 {
-  margin: 10px;
+  margin: 10px 0px 10px;
 }
 
 .two-color-logo ul {
   list-style-type: circle;
+  font-size: 25px;
 }
 
 .logo-display-flex {
@@ -197,14 +198,16 @@
   align-items: center;
   justify-content: center;
   margin: 20px;
-}
-
-.three-color-logo {
-  font-size: 30px;
+  height: 20vw;
 }
 
 .three-color-logo ul {
   list-style-type: circle;
+  font-size: 25px;
+}
+
+.three-color-logo h3 {
+  margin: 10px 0px 10px;
 }
 
 #handa-logo {
@@ -317,6 +320,7 @@
   color: var(--website-accent);
   background-color: var(--website-accent-2);
   height: auto;
+  width: 100vw;
   position: static;
   margin-top: 8%;
   padding: 100px;
@@ -350,6 +354,10 @@
   padding-top: 50px;
   display: block;
   text-align: center;
+}
+
+.plan-div ul {
+  list-style-type: circle;
 }
 
 .plan-div p {

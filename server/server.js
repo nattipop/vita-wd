@@ -3,6 +3,7 @@ const bodyParser = require("body-parser")
 const app = express()
 
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', false);
 mongoose.connect("mongodb://localhost/my-website", { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on("error", error => console.log(error))

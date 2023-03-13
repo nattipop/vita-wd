@@ -41,6 +41,9 @@ const Plans = () => {
       <div className="row">
         {renderPlans()}
       </div>
+      <div style={{textAlign: "center", width: "100%", paddingTop: "50px"}}>
+        <a style={{color: "white", textDecoration: "underline", fontSize: "20px"}} href="https://www.semrush.com/blog/what-is-seo/">What is Search Engine Optimization?</a>
+      </div>
       <LogoDesign/>
     </div>
   )

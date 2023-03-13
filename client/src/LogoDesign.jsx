@@ -12,9 +12,10 @@ const LogoDesign = () => {
               <img id="bradley-logo" src={bradley} />
             </div>
             <h3>Two color logo - $300</h3>
-            <h3>You'll get two logo variations in</h3>
+            <h3>Four logo variations</h3>
+            <p>Can be used for your website and/or promotional products</p>
             <ul>
-              <li>Transparent vector background (Either svg or ai file)<a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
+              <li>Transparent background (Either svg or ai vector file)  <a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
               <li>Solid color background (JPEG file)</li>
             </ul>
           </div>
@@ -23,9 +24,10 @@ const LogoDesign = () => {
               <img id="handa-logo" src={hopeandanchor} />
             </div>
             <h3>Three+ color logo - $400</h3>
-            <h3>You'll get four logo variations in</h3>
+            <h3>Four logo variations</h3>
+            <p>Can be used for your website and/or promotional products</p>
             <ul>
-              <li>Transparent vector background (Either svg or ai file)<a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
+              <li>Transparent background (Either svg or ai vector file)  <a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
               <li>Solid color background (JPEG file)</li>
             </ul>
           </div>
