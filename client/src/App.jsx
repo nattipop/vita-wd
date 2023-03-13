@@ -10,7 +10,6 @@ import Footer from './Footer';
 const loading_img = "https://lh3.googleusercontent.com/-t-xfI89q2u7KdUYJOE-sqnd1MHE2j0Eo8ENuHNmofGshIR4uaBv-gQuaUysw5ORkT95HkCAqvqK-O7pCMpFNQSEzIeWOI_fMvT0tyNj6w2U9lXUvlPQC5LQWX7v7M6-W1QQcTu4CcArCN-557LST2X4lb2g0Lyj84mJjhFnwpRywVDANxvYCGNvM7764PnRL4EMxnLWD-ca0GjnlitWsI4-LYjX6jJVgECkHKQWFh1FlAniFNgujbkB5KE3P-dm5Ghskekpt9nEt4OkIOUE3VECdDtJWJ6TEJBJ5v0gJBVToEhL9pTDTw7Oam4Z8YhIdDHPKI__lsQwKBK7rxfHgrHnYpkDl55D4bbcdZiClr-zkc94hcrUWlSvi9LOOEn89t47Y4YFEmeEL5W1uTGwD7iTjOkOscDUN4kfKssAEGfNyTTDsOPBGowMJrWhPqChcFaujJR9xIdbE5UAmzFDziufRIhr2P7isVHGLtP112hCaCAfBkCJhQzXeDW3a2uALh_gSyE3wIyClZltB-ZweQlkm3fY--Wp6ptUFbc-VrpnxjqFq4ik8IMLNja7R_4spkX-jlLNmrii1ukQMavnQHpy_SG8E1BpTPPxxnlX8_UlyJySs-LH8uXiRAQKEqjN0yJ92ywcFgZZYGaU47FscwuDbdD3QEz6iKGjyENKgzrbhcPpa6fQ_fAVBZhUBsNkpzpWm95mult8sNJOMZ9ZzLYjLurIdue9royQqDqc2qFLXDO0vqE6J4DGLWhO771O_0O-i3whjJGcMyP4H6cimpE0JHEY9dG26xUH19g_9UYAzksuNxKRVJqeGymbcDgs8Wmjbqms-fUV3mXQoMwo5rxqMqSTJWNnEU1R9jG2RKTS4LczVNeWV4kwwAufVIEfPhNbcuuhqtN6kwFA9zoyEVKzk_Ji1TvqeWfoEG_5wVQB=w1240-h640-no?authuser=0";
 
 const About = React.lazy(() => import("./About"));
-const AboutMe = React.lazy(() => import("./AboutMe"));
 const Blog = React.lazy(() => import("./Blog"));
 const Contact = React.lazy(() => import("./Contact"));
 
@@ -26,11 +25,6 @@ function App() {
         <Route path="/about" element={
           <React.Suspense fallback={<img className="loading" src={loading_img} />}>
             <About/>
-          </React.Suspense>
-        } />
-        <Route path="/natalie" element={
-          <React.Suspense fallback={<img className="loading centered_div" src={loading_img} />}>
-            <AboutMe/>
           </React.Suspense>
         } />
         <Route path="/blog" element={
@@ -64,19 +58,9 @@ function App() {
             <li className="nav-item">
               <Link className="nav-link" to={"/contact"}>Contact</Link>
             </li>
-            <div className="dropdown nav-item">
-              <div className="nav-link dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                About
-              </div>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a className="dropdown-item" href="/about">
-                  What is Vita?
-                </a></li>
-                <li><a className="dropdown-item" href="/natalie">
-                  About Natalie
-                </a></li>
-              </ul>
-            </div>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/about"}>About</Link>
+            </li>
           </ul>
         </div>
       </nav>

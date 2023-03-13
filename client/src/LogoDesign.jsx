@@ -5,18 +5,32 @@ const LogoDesign = () => {
   return (
     <div id="logo-design-section">
       <h1 id="logo-title">Logo Design</h1>
-      <div id="logo-display-section" className="container">
-        <div className="row" style={{width: "50vw"}}>
-          <div className="col">
-            <img id="handa-logo" src={hopeandanchor} />
+      <div id="logo-display-section">
+        <div className="row">
+          <div className="col two-color-logo">
+            <div className="logo-display-flex">
+              <img id="bradley-logo" src={bradley} />
+            </div>
+            <h3>Two color logo - $300</h3>
+            <h3>You'll get two logo variations in</h3>
+            <ul>
+              <li>Transparent vector background (Either svg or ai file)<a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
+              <li>Solid color background (JPEG file)</li>
+            </ul>
           </div>
-          <div className="col">
-            <img id="bradley-logo" src={bradley} />
+          <div className="col three-color-logo">
+            <div className="logo-display-flex">
+              <img id="handa-logo" src={hopeandanchor} />
+            </div>
+            <h3>Three+ color logo - $400</h3>
+            <h3>You'll get four logo variations in</h3>
+            <ul>
+              <li>Transparent vector background (Either svg or ai file)<a href="https://www.mergemedia.co.nz/what-is-a-vector-file-and-why-are-they-important/" style={{fontSize: "20px", textDecoration: "underline"}}> why is this important?</a></li>
+              <li>Solid color background (JPEG file)</li>
+            </ul>
           </div>
         </div>
       </div>
-      <h3>2 color logo - $300</h3>
-      <h3>3+ color logo - $400</h3>
     </div>
   )
 }

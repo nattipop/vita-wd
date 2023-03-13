@@ -19,6 +19,7 @@
   top: 0px;
   width: 100%;
   background-color: var(--website-theme);
+  box-shadow: #1b291d42 0px 3px;
 }
 
 #navbarNavDropdown {
@@ -53,20 +54,14 @@
   box-shadow: none;
 }
 
-#logo-design-section {
-  background-color: var(--website-theme);
+/* Footer */
+.footer-links {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-links:hover {
   color: var(--website-accent-2);
-  padding: 10vw;
-  margin-top: 10vw;
-}
-
-#logo-display-section {
-  margin: 10vw;
-  width: 90vw;
-}
-
-#logo-title {
-  text-align: center;
 }
 
 #footer {
@@ -170,6 +165,48 @@
 }
 
 /* Logos */
+#logo-design-section {
+  background-color: #57886c57;
+  color: white;
+  padding: 5vw 10vw 5vw;
+  margin-top: 10vw;
+}
+
+#logo-display-section {
+  margin-top: 3vw;
+}
+
+#logo-title {
+  text-align: center;
+}
+
+.two-color-logo {
+  font-size: 30px;
+}
+
+.two-color-logo h3 {
+  margin: 10px;
+}
+
+.two-color-logo ul {
+  list-style-type: circle;
+}
+
+.logo-display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.three-color-logo {
+  font-size: 30px;
+}
+
+.three-color-logo ul {
+  list-style-type: circle;
+}
+
 #handa-logo {
   width: 20vw;
   height: 20vw;
