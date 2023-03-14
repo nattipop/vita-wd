@@ -14,7 +14,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-const { BlogPost, Plan } = require("./models")
+const { BlogPost, Plan, ClientEmail } = require("./models");
+const emails = require("./email");
 
 // test
 app.get("/api", (req, res) => {
@@ -112,5 +113,30 @@ app.post("/api/new-post", (req, res) => {
     res.status(400).send("Incorrect data formatting")
   }
 });
+
+// send an email
+app.post("/api/new-email", (req, res) => {
+  if(req.body) {
+    emails.sendEmail(req.body.fName, req.body.lName, req.body.clientEmail, req.body.business, req.body.service, req.body.haveWebsite, req.body.haveDomain);
+
+    const client = new ClientEmail({
+      first: req.body.fName,
+      last: req.body.lName,
+      email: req.body.clientEmail,
+      business: req.body.business,
+      service: req.body.service,
+      website: req.body.haveWebsite,
+      domain: req.body.haveDomain
+    })
+
+    client.save((err) => {
+      if(err) { return next(err) }
+
+      res.status(200).send("Successfully added to database")
+    })
+  } else {
+    res.status(400).send("Incorrect data formatting")
+  }
+})
 
 app.listen(5000, () => console.log("Server running on port 5000"))
