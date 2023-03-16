@@ -4,7 +4,7 @@ const keys = require("../config/keys")
 let transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
-  secure: "true",
+  secure: "false",
   auth: {
     user: keys.emailUsername,
     pass: keys.emailPassword
@@ -16,14 +16,19 @@ module.exports = {
     try {
       let info = await transporter.sendMail({
         from: "nattipop815@gmail.com",
-        to: keys.emailUsername,
+        to: "natalie@vitawd.com",
         subject: `New website form from ${fName} ${lName}`,
-        html: `Full Name: ${fName} ${lName}`,
-        html: `Email: ${clientEmail}`,
-        html: `Business/Non-Profit Name: ${business}`,
-        html: `Service: ${service}`,
-        html: `Already have a website: ${haveWebsite}`,
-        html: `Already have domain: ${haveDomain}`
+        html: `<div>
+          <h1>Here's the data:</h1>
+          <ul>
+            <li>Full Name: ${fName} ${lName}</li>
+            <li>Email: ${clientEmail}</li>
+            <li>Business/Non-Profit Name: ${business}</li>
+            <li>Service: ${service}</li>
+            <li>Already have a website: ${haveWebsite}</li>
+            <li>Already have domain: ${haveDomain}</li>
+          </ul>
+        </div>`
       })
     } catch (err) {
       console.log(err)

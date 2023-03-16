@@ -127,6 +127,7 @@
 .about-me-section {
   display: grid;
   grid-template-columns: 30vw 70vw;
+  grid-template-rows: 30vw, 50vw;
   place-items: center;
 }
 
@@ -325,6 +326,22 @@
   margin: 4vw;
 }
 
+#error-message {
+  color: red;
+  padding-top: 10px;
+}
+
+#success-popup {
+  position: fixed;
+  background-color: var(--website-theme);
+  top: 20vw;
+  left: 30vw;
+  width: 40vw;
+  padding: 2vw;
+  font-size: 1vw;
+  color: white;
+}
+
 .text-input {
   margin: 1vw;
   width: 30vw;
@@ -341,7 +358,7 @@
   background-color: white;
 }
 
-#email-button {
+#submit-button {
   background-color: var(--website-accent-2);
   margin-top: 3vw;
 }

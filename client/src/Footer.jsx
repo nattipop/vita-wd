@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="row">
           <div className="col"></div>
           <div className="col">
-            <a className="footer-links" href="https://www.instagram.com/nattipop/"><h3>Instagram</h3></a>
+            <a className="footer-links" href="https://www.instagram.com/vitawebdesign/"><h3>Instagram</h3></a>
           </div>
           <div className="col">
             <a className="footer-links" href="https://www.facebook.com/natalie.poppe.5"><h3>Facebook</h3></a>

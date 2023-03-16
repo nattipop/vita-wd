@@ -7,6 +7,13 @@ const About = () => {
           <h1>Hi, I'm Natalie</h1>
           <h3>I'm a Web Developer and Designer located in Northern Wisconsin. My goal is to help businesses an non-profits in my area build an online presence.</h3>
         </div>
+        <div></div>
+        <div>
+          <h3 className="about-me-text">I started Vita Web Design because I saw a need in my community for good websites. I noticed many small businesses have a website that doesn't work properly or is outdated. Some simply don't have a website at all.<br/>
+          <br/>
+          I want to show the amazing businesses and non-profits around me the importance of a good website. 
+          </h3>
+        </div>
       </div>
     </div>
   )

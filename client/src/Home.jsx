@@ -2,6 +2,7 @@ import Plans from "./Plans";
 import animation from "./pictures/Animation.png"
 import image from "./pictures/Vitalogo 01 Artboard 1.svg"
 import { useState, useEffect } from "react";
+import Contact from "./Contact";
 
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
           <h1 className="text-center">Website Plans</h1>
           <Plans />
         </div>
+        <Contact />
       </div>
     </div>
   )
