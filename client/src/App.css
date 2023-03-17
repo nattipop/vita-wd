@@ -13,45 +13,83 @@
 }
 
 /* Navbar */
-#nav {
-  font-size: 30px;
+#navbar {
+  font-size: 25px;
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 100vw;
+  height: 64px;
   background-color: var(--website-theme);
   box-shadow: #1b291d42 0px 3px;
 }
 
-#navbarNavDropdown {
-  justify-content: center;
-  align-items: center;
+#navbar a {
+  color: white;
 }
 
-.dropdown-toggle::after {
-  display: none !important;
+#navbar li {
+  height: 64px;
+  width: 2vw;
+  text-align: center;
+  padding: 10px 0px 5px;
 }
 
-#dropdownMenuButton2:hover {
-  cursor: pointer;
-}
-
-.nav-link {
-  color: var(--website-accent) !important;
-  margin: 0px !important;
-  padding: 0px 20px 0px !important;
-}
-
-.nav-link:hover {
+#navbar li:hover {
   background-color: var(--website-accent-2);
 }
 
-#hamburger-menu {
-  border: none;
+#navbar ul {
+  list-style: none;
+  width: 40vw;
 }
 
-#hamburger-menu:focus {
-  border: none;
-  box-shadow: none;
+#nav-hamburger {
+  display: none;
+  background-color: white;
+  width: 100vw;
+  padding: 3vw;
+  top: 0px;
+}
+
+#nav-hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-dropdown {
+  background-color: var(--website-theme);
+  width: 100vw;
+  position: absolute;
+  top: 10vw;
+  box-shadow: #1b291d42 0px 3px;
+  animation: slidedown 0.8s;
+  display: none;
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: -300px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+#hamburger-dropdown a {
+  color: white;
+}
+
+#hamburger-dropdown ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+#hamburger-dropdown li {
+  width: 15vw;
+  padding: 1vw;
+}
+
+#hamburger-dropdown li:hover {
+  background-color: var(--website-accent-2);
 }
 
 /* Footer */
@@ -198,7 +236,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
   height: 20vw;
 }
 
@@ -212,9 +249,8 @@
 }
 
 #handa-logo {
-  width: 20vw;
-  height: 20vw;
-  object-position: -6px -7px;
+  width: 150px;
+  height: 150px;
   image-rendering: crisp-edges;
   image-resolution: 100%;
 }
@@ -240,7 +276,7 @@
 .header-front-page {
   width: 100vw;
   text-align: center;
-  margin-top: -40px;
+  margin-top: -30px;
   margin-bottom: 10px;
   font-size: clamp(30px, 4vw, 40px);
   padding: 2vw 5vw 0px;
@@ -280,7 +316,7 @@
 }
 
 #blog-posts-container {
-  padding: 150px;
+  padding: 10vw;
   color: var(--website-accent-2);
 }
 
@@ -315,7 +351,7 @@
 #contact {
   color: var(--website-accent-2);
   height: auto;
-  margin: 10vw;
+  padding: 5vw 0px 10vw;
 }
 
 #contact-form {
@@ -324,6 +360,10 @@
   justify-content: center;
   flex-direction: column;
   margin: 4vw;
+}
+
+.schedule-text {
+  width: 30vw;
 }
 
 #error-message {
@@ -383,7 +423,7 @@
   width: 100vw;
   position: static;
   margin-top: 8%;
-  padding: 100px;
+  padding: 10vw;
 }
 
 .flex-div {
@@ -411,7 +451,7 @@
 }
 
 .plan-div {
-  padding-top: 50px;
+  padding-top: 5vw;
   display: block;
   text-align: center;
 }
@@ -455,59 +495,77 @@
   }
 }
 
-/* mobile adjustments */
-@media (max-width: 416px) {
-  .telling-your-story h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .telling-your-story h3 {
-    text-align: center;
-  }
-
-  .telling-your-story {
-    padding: 0px;
-    flex-direction: column;
-  }
-
-  .square-image {
-    max-height: 300px;
-    max-width: 200px;
-  }
-
-  #header-image {
-    width: 100%;
-  }
-
-  #telling-background {
-    height: 750px;
-  }
-
-  #nav {
-    left: 44%;
-  }
-
-  #navbarNavDropdown {
-    display: flex;
-    flex-direction: row;
+@media (min-width: 950px) {
+  #hamburger-dropdown {
+    display: none;
   }
 }
 
-@media (max-width: 999px) {
-  .about-me-section {
-    display: grid;
-    grid-template-columns: 100vw;
-    text-align: center;
-  }
-  .about-me-text {
-    width: auto;
-    padding-right: 80px;
-    padding-left: 80px;
-    text-align: center;
+@media (max-width: 950px) {
+  #navbar {
+    display: none;
   }
 
-  #nav {
-    display: none;
+  #nav-hamburger {
+    display: block;
+    position: absolute;
+  }
+
+  .plan-div {
+    min-width: 70vw;
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-input {
+    width: 80vw;
+  }
+
+  .schedule-text {
+    width: 80vw;
+  }
+
+  .logo-display-flex {
+    margin: 7vw;
+  }
+
+  .post-list-div {
+    padding: 0px;
+    margin-top: 7vw;
+  }
+
+  .post-list-div h1 {
+    font-size: 30px;
+  }
+
+  #footer {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0px 40px;
+  }
+
+  .footer-columns {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+
+  #contact {
+    margin-top: 20px;
+  }
+
+  .about-me-section {
+    grid-template-columns: 100vw;
+  }
+
+  .about-me-text {
+    padding: 0px 80px 20px;
+  }
+
+  .about-me-background {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    height: auto;
   }
 }

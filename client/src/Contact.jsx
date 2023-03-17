@@ -53,9 +53,9 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="container">
+    <div id="contact">
       <form id="contact-form">
-        <h2 className="text-center" style={{width: "30vw"}}>If you're interested in scheduling a meeting, fill in your info and I'll email you.</h2>
+        <h2 className="text-center schedule-text">If you're interested in scheduling a meeting, fill in your info and I'll email you.</h2>
         <input onChange={(e) => setFn(e.target.value)} value={fn}className="text-input" placeholder="First Name" />
         <input onChange={(e) => setLn(e.target.value)} value={ln} className="text-input" placeholder="Last Name" />
         <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" className="text-input" placeholder="Email" />
@@ -79,8 +79,10 @@ const Contact = () => {
         }</h3>
         <button onClick={handleSubmit} id="submit-button">Submit</button>
       </form>
-      <h1>I would love to hear from you!</h1>
-      <h3>If you have any questions or would like more information on websites email me at natalie@vitawd.com</h3>
+      <div className="container text-center" style={{paddingTop: "3vw"}}>
+        <h2>I would love to hear from you!</h2>
+        <h3>If you have any questions or would like more information on websites email me at natalie@vitawd.com</h3>
+      </div>
       <div>{success ? (
         <div id="success-popup">
           <h1>{success}</h1>

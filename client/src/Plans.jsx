@@ -37,7 +37,7 @@ const Plans = () => {
   }
 
   return (
-    <div className="container">
+    <div>
       <div className="row">
         {renderPlans()}
       </div>
