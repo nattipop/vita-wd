@@ -1,10 +1,15 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config()
+}
+
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
+const keys = require("../config/keys")
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://localhost/my-website", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(keys.dbConnectionString, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on("error", error => console.log(error))
 db.once("open", () => console.log("connected to database"));
@@ -139,4 +144,4 @@ app.post("/api/new-email", (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log("Server running on port 5000"))
+app.listen(process.env.PORT || 5000, () => console.log("Server running on port 5000"))
