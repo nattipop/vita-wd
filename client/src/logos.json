@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Dominion Taxidermy",
+    "description": "White logo circle",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701378731/DTwhitecircle_voabsw.jpg",
+    "id": "1"
+  },
+  {
+    "title": "Dominion Taxidermy",
+    "description": "Black logo circle",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701378736/DTblackcircle_xyqnyd.jpg",
+    "id": "2"
+  },
+  {
+    "title": "Bradley Cleaning",
+    "description": "",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701378831/Bcc-white_01_Artboard_1_l7proi.jpg",
+    "id": "3"
+  },
+  {
+    "title": "Radiant Light",
+    "description": "",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701385693/RadiantLightSquare_m8cxor.jpg",
+    "id": "4"
+  },
+  {
+    "title": "Springhill Heritage Quilts",
+    "description": "Red logo - text above",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701636551/Untitled-23_zznmtw.jpg",
+    "id": "5"
+  },
+  {
+    "title": "Springhill Heritage Quilts",
+    "description": "Black logo - text underneath",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701648051/Untitled-22_odti1p.jpg",
+    "id": "6"
+  },
+  {
+    "title": "Vita Web Design",
+    "description": "Circle logo with leaves",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701378671/icon_d34hls.jpg",
+    "id": "7"
+  },
+  {
+    "title": "Hope & Anchor Coffeehouse",
+    "description": "Circle logo coffee cup",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701386858/H_A_01_Artboard_1_mvxsev.jpg",
+    "id": "8"
+  },
+  {
+    "title": "Vita Web Design",
+    "description": "Vita letters",
+    "src": "https://res.cloudinary.com/dawteptkh/image/upload/v1701389456/Vitalogo_01_Artboard_1_hvwsrk.jpg",
+    "id": "9"
+  }
+]

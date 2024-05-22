@@ -1,0 +1,15 @@
+#logos {
+  padding: 100px;
+}
+
+@media (max-width: 770px) {
+  #logos {
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 490px) {
+  .website-page-p {
+    margin: 20px 0px;
+  }
+}

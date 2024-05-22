@@ -1,0 +1,140 @@
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-content: center;
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+}
+
+#contact-header {
+  color: var(--website-accent-2);
+}
+
+#email-form {
+  width: 80%;
+}
+
+#phone-link {
+  color: var(--website-theme) !important;
+}
+
+#phone-link:hover {
+  color: var(--website-theme) !important;
+  text-decoration: underline;
+}
+
+#contact-top-links {
+  padding: 50px 150px;
+}
+
+.my-form {
+  height: 450px;
+  padding: 4vw;
+  width: 100%;
+}
+
+#facebook-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+}
+
+#instagram-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+}
+
+#facebook-text {
+  color: white;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f271b67;
+  margin-top: -200px;
+  position: absolute;
+}
+
+#facebook-text:hover {
+  cursor: pointer;
+  background-color: #1f271b25;
+  text-decoration: underline;
+}
+
+#instagram-text {
+  color: white;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f271b67;
+  margin-top: -200px;
+  position: absolute;
+}
+
+#instagram-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #1f271b25;
+}
+
+.socials-row {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-div {
+  max-width: 200px;
+  margin: 0px 50px;
+}
+
+/* MOBILE */
+/* 2XL */
+@media (max-width: 1536px) {
+}
+
+/* XL */
+@media (max-width: 1288px) {
+}
+
+/* L */
+@media (max-width: 1024px) {
+  .socials-row {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .socials-div {
+    margin: 10px;
+    padding: 0px;
+  }
+}
+
+/* M */
+@media (max-width: 768px) {
+}
+
+/* S */
+@media (max-width: 640px) {
+  .contact-container {
+    padding: 0px;
+  }
+
+  #email-form {
+    margin: 0px;
+    min-width: 100%;
+  }
+}
+
+/* XS */
+@media (max-width: 475px) {
+}

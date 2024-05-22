@@ -1,0 +1,128 @@
+#navbar {
+  font-size: 25px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 64px;
+  background-color: var(--website-accent-2);
+  display: flex;
+  z-index: 20;
+}
+
+#navbar a {
+  color: white;
+}
+
+.links-container {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  padding: 0px;
+}
+
+.nav-links {
+  padding: 25px;
+}
+
+.nav-links a {
+  font-family: var(--sub-title);
+  background-image: linear-gradient(var(--website-theme), var(--website-theme));
+  background-size: 0% 0.1em;
+  background-position-x: 0%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.nav-links :hover,
+.nav-links :focus,
+.nav-links :active {
+  background-size: 100% 0.1em;
+}
+
+#nav-hamburger {
+  display: none;
+  position: fixed;
+  top: 4px;
+  left: calc(100vw - 64px) !important;
+  z-index: 999;
+}
+
+#hamburger-img {
+  height: 64px;
+  width: 64px;
+  padding: 10px;
+  display: none;
+}
+
+#nav-hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-dropdown {
+  background-color: var(--website-theme);
+  width: 100vw;
+  position: absolute;
+  top: 10vw;
+  box-shadow: #1b291d42 0px 3px;
+  animation: slidedown 0.8s;
+  display: none;
+}
+
+#top-left-logo {
+  position: relative;
+  height: 43px;
+  margin: 10px;
+  width: 180px;
+}
+
+#phone-nav {
+  position: relative;
+  color: white;
+  font-family: var(--sub-title);
+  font-size: 18px;
+  padding: 8px;
+  margin: 8px;
+  width: 140px;
+  background-color: var(--website-theme);
+}
+
+#phone-nav:hover {
+  border-color: white;
+  background-color: #3e6a51;
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: -300px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+#hamburger-dropdown a {
+  color: white;
+}
+
+#hamburger-dropdown ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+#hamburger-dropdown li {
+  width: 15vw;
+  padding: 1vw;
+}
+
+#hamburger-dropdown li:hover {
+  background-color: var(--website-accent-2);
+}
+
+#top-left-logo:hover {
+  cursor: pointer;
+}

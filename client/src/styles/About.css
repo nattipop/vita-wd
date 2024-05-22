@@ -1,0 +1,117 @@
+#natalie-headshot img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#natalie-headshot {
+  z-index: 6;
+  float: left;
+  margin: 0px 20px 5px 0px;
+}
+
+#bible-verse {
+  position: relative;
+  z-index: 12;
+  max-width: 100%;
+  margin: 100px;
+  font-size: 12px;
+}
+
+#bible-verse h1 {
+  border: 3px white solid;
+  border-radius: 4px;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+}
+
+#about-main-body {
+  margin: 20px;
+}
+
+#about-main {
+  background-color: var(--website-accent-2);
+  z-index: 12;
+  padding: 100px;
+}
+
+#about-section {
+  background-image: url("https://res.cloudinary.com/dawteptkh/image/upload/v1706569417/IMG_9617_ffwjao.jpg");
+  background-size: cover;
+  background-position: 0px -300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about-section a {
+  color: white !important;
+  z-index: 4;
+  text-decoration: underline 2px solid;
+}
+
+#about-header {
+  z-index: 6;
+  text-align: center;
+}
+
+#about-me-text {
+  text-align: left;
+  z-index: 3;
+}
+
+#overlay {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  background-color: #1f271b9a;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+/* MOBILE */
+/* xl */
+@media (max-width: 1280px) {
+  .mobile-form {
+    max-height: 350px;
+  }
+
+  #overlay {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #about-section {
+    background-position: 0px 0px !important;
+  }
+
+  #overlay {
+    height: 1000px;
+  }
+}
+
+/* m */
+@media (max-width: 768px) {
+  #overlay {
+    height: 1200px;
+  }
+}
+
+/* s */
+@media (max-width: 640px) {
+  #bible-verse {
+    margin: 100px 20px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  #about-main-body {
+    padding: 0px;
+  }
+}

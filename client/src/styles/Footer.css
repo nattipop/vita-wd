@@ -1,0 +1,36 @@
+.footer-links {
+  color: white !important;
+  z-index: 18;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+  color: var(--website-accent-2);
+}
+
+#footer {
+  position: relative;
+  background-color: #57886c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 200px;
+  z-index: 20;
+}
+
+.footer-columns p {
+  font-size: 20px;
+  z-index: 18;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  #footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+  #footer-row {
+    flex-direction: column;
+  }
+}

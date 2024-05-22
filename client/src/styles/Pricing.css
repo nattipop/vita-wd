@@ -1,0 +1,118 @@
+#pricing {
+  padding-top: 100px;
+  background-color: #f1f1f1;
+  top: 0;
+  color: var(--website-accent-2);
+  height: auto;
+  text-align: center;
+}
+
+#pricing-link-one {
+  color: var(--website-theme) !important;
+}
+
+#pricing-link-two {
+  color: var(--website-theme) !important;
+}
+
+#pricing-link-one:hover {
+  text-decoration: underline;
+}
+
+#pricing-link-two:hover {
+  text-decoration: underline;
+}
+
+.pricing-icons {
+  float: right;
+  margin: 10px 0px;
+  width: 80px;
+}
+
+.pricing-text {
+  text-align: left;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+.pricing-titles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing-card {
+  background-color: white;
+  padding: 30px;
+  margin: 10px;
+}
+
+#domain-stuff {
+  padding: 0px 50px 100px;
+}
+
+#pricing-domain-background {
+  height: 200px;
+  width: 300px;
+}
+
+#pricing-domain-title {
+  position: static;
+  width: 100%;
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.domain-description {
+  text-align: left;
+}
+
+/* MOBILE */
+/* 2XL */
+@media (max-width: 1536px) {
+}
+
+/* XL */
+@media (max-width: 1288px) {
+}
+
+/* L */
+@media (max-width: 1024px) {
+  #all-info-row {
+    flex-direction: column;
+  }
+}
+
+/* M */
+@media (max-width: 798px) {
+  #domain-img-col {
+    min-width: 100%;
+  }
+
+  #domain-desc-col {
+    min-width: 100%;
+    padding: 30px;
+  }
+
+  #domain-description {
+    text-align: center;
+  }
+
+  #all-info-div {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-card {
+    margin: 20px;
+    max-width: calc(100vw - 40px);
+  }
+}
+
+/* S */
+@media (max-width: 640px) {
+}
+
+/* XS */
+@media (max-width: 475px) {
+}

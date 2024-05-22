@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Yeseva+One&display=swap");
+
+#root {
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  --website-theme: #57886c;
+  --overlay: #57886c59;
+  --website-accent: white;
+  --website-accent-2: #1f271b;
+  --website-accent-3: #1b291d;
+  --title: "Yeseva One", serif;
+  --sub-title: "Archivo Narrow", sans-serif;
+  font-family: var(--sub-title);
+}
+
+/* Text */
+.time-stamp {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.telling-your-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 330px;
+  text-align: center;
+}
+
+/* Photos */
+#white-logo {
+  width: 100%;
+  padding: 60px;
+}
+
+#hero-landscape {
+  background-color: var(--website-accent);
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Misc. */
+
+.flex-div {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered_div {
+  width: 100%;
+  margin: auto;
+}
+
+/* MOBILE START */
+
+/* 2XL */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1288px;
+  }
+}
+
+/* XL */
+@media (max-width: 1288px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* L */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* M */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* S */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* XS */
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
+  }
+}

@@ -7,7 +7,8 @@ const BlogPost = new Schema({
   author: String,
   description: String,
   content: String,
-  cover_image_src: String
+  cover_image_src: String,
+  photo_credit: String
 })
 
 const Plan = new Schema({
@@ -18,16 +19,5 @@ const Plan = new Schema({
   icon_url: String
 })
 
-const ClientEmail = new Schema({
-  first: String, 
-  last: String,
-  email: String,
-  business: String,
-  service: String,
-  website: Boolean,
-  domain: Boolean
-})
-
 exports.BlogPost = mongoose.model("post", BlogPost);
 exports.Plan = mongoose.model("plan", Plan);
-exports.ClientEmail = mongoose.model("email", ClientEmail);
