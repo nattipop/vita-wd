@@ -93,6 +93,23 @@
   #overlay {
     height: 1000px;
   }
+
+  #bible-verse {
+    font-size: 8px;
+  }
+
+  #about-main {
+    padding: 30px;
+    text-align: center;
+  }
+
+  #about-me-text {
+    text-align: center;
+  }
+
+  #natalie-headshot {
+    float: none;
+  }
 }
 
 /* m */

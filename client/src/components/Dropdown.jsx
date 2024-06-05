@@ -6,6 +6,8 @@ const Dropdown = () => {
   useEffect(() => {
     document.getElementById("dropdown").classList.add("full");
     document.getElementById("nav-hamburger").style.display = "none";
+
+    window.scrollTo(0,0)
     return
   }, [])
 

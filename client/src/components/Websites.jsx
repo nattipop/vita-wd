@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import "../styles/Websites.css"
 import { Link } from "react-router-dom"
 
 const Websites = () => {
+  useEffect(() => {
+    document.title = "Vita Web Design | Websites";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="websites">
       <h1 id="websites-header">Want a website? Here's what I need to know.</h1>
@@ -9,7 +15,7 @@ const Websites = () => {
       <h3 id="domain-header" className="website-page-headers">Domain name</h3>
       <p className="website-page-p">This is the location of your website on the web. It is the name that appears in the search bar while people visit your website. For example:<br/><br/>
       <code>https://www.vitawd.com</code><br/><br/>
-      Here, “vitawd” is the domain name. It is best to keep your domain name simple and unique to your business. Generally, the shorter the better, but keep in mind, shorter and more popular domains cost more!<br/><br/>For more info on what a domain is, take a look at <a id="website-link-two" href="https://www.namecheap.com/domains/domain-definition-what-is-a-domain-name/">Namecheap's in-depth explanation</a></p>
+      Here, “vitawd” is the domain name. It is best to keep your domain name simple and unique to your business. Generally, the shorter the better, but keep in mind, shorter and more popular domains cost more!<br/><br/>You will be responsible for the cost of renewing your domain.<br/><br/>For more info on what a domain is, take a look at <a id="website-link-two" href="https://www.namecheap.com/domains/domain-definition-what-is-a-domain-name/">Namecheap's in-depth explanation</a></p>
       <h3 id="pages-header" className="website-page-headers">Pages</h3>
       <p className="website-page-p">The average business website will have Home, About, Contact, and Services. Many will have more pages but this is the basic foundation for a website. If you aren't sure if something should be its own page, add it to the list anyway and we will discuss it!</p>
       <h3 id="features-header" className="website-page-headers">Features</h3>
